@@ -1,0 +1,18 @@
+version: '3.0'
+
+services:
+  amazon1:
+    image: ubuntu:16.04
+    hostname: amazon1
+    container_name: amazon1
+    restart: always
+    ports:
+      - 173.249.55.57:2211:22
+      - 173.249.55.57:7010:80
+
+    volumes:
+      - .:/amazon
+    stdin_open: true
+    tty: true
+                                                                                                                                                                      
+
